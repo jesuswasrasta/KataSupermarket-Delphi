@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{45AEB1FA-AFCC-4E54-8C6B-CFB5B883C1D6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="KataSupermarket.Console\KataSupermarket.Console.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="KataSupermarket.Tests\KataSupermarket.Tests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="KataSupermarket_Console">
+        <MSBuild Projects="KataSupermarket.Console\KataSupermarket.Console.dproj"/>
+    </Target>
+    <Target Name="KataSupermarket_Console:Clean">
+        <MSBuild Projects="KataSupermarket.Console\KataSupermarket.Console.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="KataSupermarket_Console:Make">
+        <MSBuild Projects="KataSupermarket.Console\KataSupermarket.Console.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="KataSupermarket_Tests">
+        <MSBuild Projects="KataSupermarket.Tests\KataSupermarket.Tests.dproj"/>
+    </Target>
+    <Target Name="KataSupermarket_Tests:Clean">
+        <MSBuild Projects="KataSupermarket.Tests\KataSupermarket.Tests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="KataSupermarket_Tests:Make">
+        <MSBuild Projects="KataSupermarket.Tests\KataSupermarket.Tests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="KataSupermarket_Console;KataSupermarket_Tests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="KataSupermarket_Console:Clean;KataSupermarket_Tests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="KataSupermarket_Console:Make;KataSupermarket_Tests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
