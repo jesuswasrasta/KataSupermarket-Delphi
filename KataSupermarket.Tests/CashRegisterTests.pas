@@ -8,10 +8,10 @@ uses
 
 type
   [TestFixture]
-  Setup = class
+  CashRegisterTests = class
   public
     // Sample Methods
-    [Setup]
+    [CashRegisterTests]
     procedure Setup;
     [TearDown]
     procedure TearDown;
@@ -24,20 +24,20 @@ type
 //Implementation
 implementation
 
-procedure Setup.Setup;
+procedure CashRegisterTests.Setup;
 begin
 end;
 
-procedure Setup.TearDown;
+procedure CashRegisterTests.TearDown;
 begin
 end;
 
-procedure Setup.SetupIsOK;
+procedure CashRegisterTests.SetupIsOK;
 begin
   Assert.Pass();
 end;
 
 initialization
-  TDUnitX.RegisterTestFixture(Setup);
+  TDUnitX.RegisterTestFixture(CashRegisterTests);
 
 end.
