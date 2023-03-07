@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\Develop\TDD\KataSupermarket-Delphi\KataSupermarket.Tests\Win32\Debug\KataSupermarket.Tests.exe" total="11" errors="0" failures="1" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2023-03-07" time="0.098">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="KataSupermarket.Tests.exe" executed="true" result="Failure" success="False" time="0.098" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="Test" executed="true" result="Failure" success="False" time="0.098" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="Setup" executed="True" result="Failure" success="False" time="0.098" >
+                <results>
+                  <test-case name="UnaMelaCosta50Centesimi" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="UnaPeraCosta30Centesimi" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="UnAnanasCosta220Centesimi" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="UnaBananaCosta60Centesimi" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="DuePereCostano60Centesimi" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="DueMeleCostano100CentesimiConScansioneSeparate" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="DuePereCostano60CentesimiConScansioneSeparate" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="DueBananeCostano120CentesimiConScansioniSeparate" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="DueAnanasCostano440CentesimiConScansioniSeparate" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="TreMeleCostano130Anziche150" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="TreMeleConOffertaDuePereSenzaOffertaCostano190" executed="True" result="Failure" success="False" time="0.026" asserts="0" >
+                    <failure>
+                      <message>
+                        <![CDATA[ Expected 190 but got 300  ]]>
+                      </message>
+                      <stack-trace>
+                        <![CDATA[  ]]>
+                      </stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>

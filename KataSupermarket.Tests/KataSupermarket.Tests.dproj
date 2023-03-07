@@ -74,6 +74,9 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
+        <DCC_Define>TESTINSIGHT;$(DCC_Define)</DCC_Define>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>(None)</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -106,6 +109,20 @@
                 <Source>
                     <Source Name="MainSource">KataSupermarket.Tests.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\DCSGUI.bpl">File C:\OutSamW2\DCSGUI.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\TMS BIZ Core Library\packages\dsydney\.\Win32\Release\dcltmsbcl270.bpl">TMS BIZ Core Library - Design-Time Package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\TMS Aurelius\packages\dsydney\.\Win32\Release\dclaurelius270.bpl">TMS Aurelius - Design-Time Package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\dclfsFD27.bpl">File C:\OutSamW2\dclfsFD27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="c:\outsamw2\ADKComponents.bpl">File c:\outsamw2\ADKComponents.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\zDesign27.bpl">File C:\OutSamW2\zDesign27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\SyntEditDB27.bpl">File C:\OutSamW2\SyntEditDB27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\SyntEditDcl27.bpl">File C:\OutSamW2\SyntEditDcl27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\dclfs27.bpl">File C:\OutSamW2\dclfs27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\dclfsADO27.bpl">File C:\OutSamW2\dclfsADO27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\dclfsDB27.bpl">File C:\OutSamW2\dclfsDB27.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\OutSamW2\dclSVGIconImageListFMX_D10_4.bpl">File C:\OutSamW2\dclSVGIconImageListFMX_D10_4.bpl not found</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
